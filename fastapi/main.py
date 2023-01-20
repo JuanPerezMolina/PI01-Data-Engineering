@@ -39,7 +39,7 @@ def get_score_count(plataforma, score, anno):
     df_movies = pd.read_csv('..\Datasets\movies.csv')
     id_plataforma = plataforma[0].lower()
     # Creaamos un dataframe df_plataforma solo con los registros de la plataforma indicada
-    df_plataforma = df_movies[df_movies['title'].str[0] == id_plataforma] 
+    df_plataforma = df_movies[df_movies['id'].str[0] == id_plataforma] 
     # Creamos un df_filtered solo con las condiciones solicitadas
     df_filtered = df_plataforma[(df_plataforma['score'] > score)&(df_plataforma['release_year']==anno)] 
     #Contamos el numero de registros del dataframe que cumple todas las condiciones
@@ -56,7 +56,7 @@ def get_second_score(plataforma):
     df_movies = pd.read_csv('..\Datasets\movies.csv')
     id_plataforma = plataforma[0].lower()
     # Creamos un dataframe df_plataforma solo con los registros de la plataforma indicada
-    df_plataforma = df_movies[df_movies['title'].str[0] == id_plataforma] 
+    df_plataforma = df_movies[df_movies['id'].str[0] == id_plataforma] 
     # Ordenamos  df_plataforma desendentemente por las columnas score y titulo 
     df_plataforma = df_plataforma.sort_values(by=['score', 'title'], ascending=[False, True])
     segunda_pelicula = df_plataforma.iloc[1, df_plataforma.columns.get_loc('title')]
@@ -71,7 +71,7 @@ def get_longest(plataforma, tipo_duracion, anno):
     df_movies = pd.read_csv('..\Datasets\movies.csv')
     id_plataforma = plataforma[0].lower()
     # Creamos un dataframe df_plataforma solo con los registros de la plataforma indicada
-    df_plataforma = df_movies[df_movies['title'].str[0] == id_plataforma] 
+    df_plataforma = df_movies[df_movies['id'].str[0] == id_plataforma] 
     # Creamos un df_filtered solo con las condiciones solicitadas
     df_filtered = df_plataforma[(df_plataforma['duration_type']==tipo_duracion)&(df_plataforma['release_year']==anno)] 
     # Ordenamos  df_filtered desendentemente por la columna duration_int 
