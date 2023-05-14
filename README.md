@@ -7,7 +7,7 @@
 
 
 
-¡Bienvenidos a mi primer proyecto individual de la etapa de labs! Mi nombre es Juan Jose Pérez y presento en mi trabajo el rol de un ***Data Engineer***.  
+¡Bienvenidos a nuestro primer proyecto individual de la etapa de labs! Mi nombre es Juan Jose Pérez y presento en mi trabajo el rol de un ***Data Engineer***.  
 
 <hr>  
 
