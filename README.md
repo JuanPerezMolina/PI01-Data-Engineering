@@ -3,7 +3,7 @@
 # <h1 align=center> **PROYECTO INDIVIDUAL Nº1** </h1>
 
 # <h1 align=center>**`Data Engineering`**</h1>
-## <h1 align=center>**`Juan Jose Perez`**</h1>
+## <h1 align=center>**`Juan Jose Perez y Rodolfo`**</h1>
 
 
 
